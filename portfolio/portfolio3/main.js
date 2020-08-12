@@ -1,9 +1,9 @@
-$('.menu').on('click', function () {
-    $(this).toggleClass('active');
-    $('.overlay').toggleClass('menu-open');
-});
+function generateRandomColor() {
+    return `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+}
 
-$('nav a').on('click' , function () {
-    $('.menu').removeClass('active');
-    $('.overlay').removeClass('menu-open');
-});
+const btn = document.querySelector('.btn');
+const page = document.querySelector('.page');
+btn.addEventListener('click', function () {
+    page.style.backgroundColor = generateRandomColor();
+})

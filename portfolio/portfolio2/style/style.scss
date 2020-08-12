@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: radial-gradient(#4b6cb7, #182848);
+    height: 100vh;
+}
+
+.container {
+    padding: 60px 0;
+    background-color: white;
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.app__title {
+    font-size: 3rem;
+}
+
+form {
+    margin-top: 20px;
+}
